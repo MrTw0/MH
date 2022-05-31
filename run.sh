@@ -1,0 +1,1 @@
+sudo apt update ; sudo apt upgrade -y ; sudo apt install php-imagick ; composer install ; cp .env.example .env ; php artisan key:generate ; php artisan storage:link;php artisan migrate:fresh;php artisan db:seed; php artisan queue:work && php artisan schedule:run
